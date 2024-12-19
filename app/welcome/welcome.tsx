@@ -87,4 +87,9 @@ const resources = [
       </svg>
     ),
   },
+  {
+    href: "/login",
+    text: "Login",
+    icon: <div>🔑</div>,
+  },
 ];

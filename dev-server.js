@@ -14,6 +14,7 @@ const viteDevServer = await import("vite").then((vite) =>
 );
 app.use(viteDevServer.middlewares);
 app.use(async (req, res, next) => {
+  console.log(req.url);
   try {
     return await createRequestListener(async (request) => {
       const source = await viteDevServer.ssrLoadModule("./server/app.ts");
